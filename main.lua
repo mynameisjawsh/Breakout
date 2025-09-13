@@ -1,6 +1,7 @@
 require("collisions")
 
 require("player")
+require("ball")
 
 Screen = {}
 Screen.x = 0
@@ -15,6 +16,7 @@ function love.load()
   love.mouse.setVisible(showCursor)
 
   Player:load()
+  Ball:load()
 
 end
 
@@ -22,6 +24,7 @@ end
 function love.update(dt)
 
   Player:update(dt)
+  Ball:update(dt)
 
 end
 
@@ -29,6 +32,7 @@ end
 function love.draw()
 
   Player:draw()
+  Ball:draw()
 
 end
 

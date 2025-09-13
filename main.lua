@@ -2,6 +2,7 @@ require("collisions")
 
 require("player")
 require("ball")
+require("brick")
 
 Screen = {}
 Screen.x = 0
@@ -17,6 +18,7 @@ function love.load()
 
   Player:load()
   Ball:load()
+  Brick:load()
 
 end
 
@@ -25,6 +27,7 @@ function love.update(dt)
 
   Player:update(dt)
   Ball:update(dt)
+  Brick:update(dt)
 
 end
 
@@ -33,6 +36,7 @@ function love.draw()
 
   Player:draw()
   Ball:draw()
+  Brick:draw()
 
 end
 

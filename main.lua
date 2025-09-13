@@ -20,6 +20,8 @@ function love.load()
   Ball:load()
   Brick:load()
 
+  Brick:init(8, 16)
+
 end
 
 
